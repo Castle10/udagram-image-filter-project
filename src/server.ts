@@ -43,7 +43,7 @@ import { fileURLToPath } from 'url';
           deleteLocalFiles([image_filtered_path]);       
         });   
       }).catch(function(err){
-        res.status(400).send('Unable to filter Image URL. Sorry!');
+        res.status(422).send('Unable to filter Image URL. Sorry!');
       });  
 
     }
